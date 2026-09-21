@@ -198,6 +198,7 @@ section { padding: 90px 0; }
 .video-card:hover { transform: translateY(-6px); border-color: var(--accent); }
 .video-card.featured { grid-column: span 2; grid-row: span 1; }
 .video-card.featured .thumb { padding-top: 50%; }
+.video-card.featured .thumb-embed { padding-top: 56.25%; }
 
 .thumb {
   position: relative;
@@ -211,6 +212,15 @@ section { padding: 90px 0; }
 .thumb-4 { background: linear-gradient(135deg, #8a7dff, #4b3aa8); }
 .thumb-5 { background: linear-gradient(135deg, #ff9f6e, #b8542a); }
 .thumb-6 { background: linear-gradient(135deg, #6ec0ff, #2a63b8); }
+
+.thumb-embed { background: #000; padding-top: 56.25%; }
+.thumb-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
 .play-btn {
   position: absolute;
